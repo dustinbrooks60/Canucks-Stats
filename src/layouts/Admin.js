@@ -20,15 +20,7 @@ import logo from "assets/img/reactlogo.png";
 
 let ps;
 
-async function getAllTeamsFromApi() {
-    try {
-        let response = await fetch('https://statsapi.web.nhl.com/api/v1/teams');
-        let responseJson = await response.json();
-        return responseJson.teams
-    } catch(error) {
-        console.error(error);
-    }
-}
+
 
 
 

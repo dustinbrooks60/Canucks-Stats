@@ -17,24 +17,43 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
+import App from './App';
+import './index.css';
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import logger from "redux-logger";
+import reducers from "./reducers"
+
 
 // core components
 import Admin from "layouts/Admin.js";
 import RTL from "layouts/RTL.js";
 
+
 import "assets/css/material-dashboard-react.css?v=1.9.0";
 
 const hist = createBrowserHistory();
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(reducers, composeEnhancers(
+    applyMiddleware(thunk, logger)
+));
+
+
 ReactDOM.render(
-  <Router history={hist}>
-    <Switch>
-      <Route path="/admin" component={Admin} />
-      <Route path="/rtl" component={RTL} />
-      <Redirect from="/" to="/admin/dashboard" />
-    </Switch>
-  </Router>,
+  <Provider store={store}>
+    {/* <Router history={hist}>
+            <Switch>
+                <Route path="/admin" component={Admin} />
+                <Route path="/rtl" component={RTL} />
+                <Redirect from="/" to="/admin/dashboard" />
+            </Switch>
+        </Router> */}
+        <App />
+    </Provider>,
   document.getElementById("root")
 );
