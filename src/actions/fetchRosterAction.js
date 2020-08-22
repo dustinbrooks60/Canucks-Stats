@@ -4,7 +4,7 @@ export function fetchRoster() {
   return function(dispatch) {
     dispatch({type: fetchRoster})
 
-    axios.get('https://statsapi.web.nhl.com/api/v1/teams/3/roster')
+    axios.get('https://statsapi.web.nhl.com/api/v1/teams/23/roster')
       .then((response) => {
         dispatch({
           type: "FETCH_ROSTER_FULFILLED",
