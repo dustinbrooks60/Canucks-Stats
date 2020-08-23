@@ -4,6 +4,7 @@ import Roster from './components/Roster';
 import Mika from './components/Mika';
 import MikaStats from './components/MikaStats';
 import Intro from './components/Intro';
+import NextGame from './components/NextGame';
 import './App.css';
 
 class App extends Component{
@@ -14,6 +15,7 @@ class App extends Component{
         <Teams />
         <Roster />
         <MikaStats />
+        <NextGame />
       </div>
     );
   }
