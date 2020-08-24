@@ -3,7 +3,6 @@ export default function reducer (state = {
     nextGameSchedule: [],
     dates: [],
     date: '',
-    games: [],
 
 
 }, action) {
@@ -27,10 +26,9 @@ export default function reducer (state = {
                 fetching: false,
                 fetched: true,
                 data: action.payload.data,
-                nextGameSchedule: action.payload.stats[0].splits[0].nextGameSchedule,
-                dates: action.payload.stats[0].splits[0].nextGameSchedule.dates,
-                date: action.payload.stats[0].splits[0].nextGameSchedule.dates.date,
-                games: action.payload.stats[0].splits[0].nextGameSchedule.dates.games,
+                nextGameSchedule: action.payload.teams[0].nextGameSchedule,
+                dates: action.payload.teams[0].nextGameSchedule.dates,
+                date: action.payload.teams[0].nextGameSchedule.dates[0].date,
             }
         }
         default: return state;
