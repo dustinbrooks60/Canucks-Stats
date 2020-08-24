@@ -25,13 +25,15 @@ class NextGame extends Component {
 
     render() {
         const date = this.props.nextGame.date;
+        const awayScore = this.props.nextGame.awayScore;
+        const homeScore = this.props.nextGame.homeScore;
 
         return (
             <Styles>
                 <Container>
                     <Row>
                         <Col>
-                            <h3 className="text-center">Next Game - Vancouver vs. Vegas</h3>
+                            <h3 className="text-center">Next Game: Canucks vs. Golden Knights</h3>
                         </Col>
                     </Row>
                     <Col md={{span: 6, offset: 3}}>
@@ -46,6 +48,11 @@ class NextGame extends Component {
                                 <td>Date:</td>
                                 <td>{date}</td>
                             </tr>
+                            <tr>
+                                <td>Score:</td>
+                                <td>{homeScore} - {awayScore}</td>
+                            </tr>
+
                             </tbody>
                         </Table>
                     </Col>
