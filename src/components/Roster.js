@@ -53,8 +53,7 @@ class Roster extends Component {
         <Container>
           <Row>
             <Col>
-              <h3 className="text-center">Retrieving Canucks Roster from the NHL API</h3>
-              <h5 className="text-center">API endpoint: <code>'https://statsapi.web.nhl.com/api/v1/teams/23/roster'</code></h5>
+              <h3 className="text-center">Canucks Roster</h3>
             </Col>
           </Row>
           <Row>

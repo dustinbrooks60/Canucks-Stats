@@ -12,10 +12,10 @@ class App extends Component{
     return (
       <div>
         <Intro />
-        <Teams />
-        <Roster />
-        <MikaStats />
+        {/* <Teams /> */ }
         <NextGame />
+        <Roster />
+        { /* <MikaStats /> */ }
       </div>
     );
   }

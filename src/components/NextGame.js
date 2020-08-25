@@ -27,20 +27,22 @@ class NextGame extends Component {
         const date = this.props.nextGame.date;
         const awayScore = this.props.nextGame.awayScore;
         const homeScore = this.props.nextGame.homeScore;
+        const awayTeam = this.props.nextGame.awayTeam;
+        const homeTeam = this.props.nextGame.homeTeam;
 
         return (
             <Styles>
                 <Container>
                     <Row>
                         <Col>
-                            <h3 className="text-center">Next Game: Canucks vs. Golden Knights</h3>
+                            <h3 className="text-center">{homeTeam} vs. {awayTeam}</h3>
                         </Col>
                     </Row>
                     <Col md={{span: 6, offset: 3}}>
                         <Table striped bordered hover size="sm" variant="dark">
                             <thead>
                             <tr>
-                                <th>Next Game Information</th>
+                                <th>Game Information</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -50,7 +52,7 @@ class NextGame extends Component {
                             </tr>
                             <tr>
                                 <td>Score:</td>
-                                <td>{homeScore} - {awayScore}</td>
+                                <td>{homeTeam}: {homeScore} / {awayTeam}: {awayScore}</td>
                             </tr>
 
                             </tbody>
