@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Teams from './components/Teams';
 import Roster from './components/Roster';
-import Mika from './components/Mika';
-import MikaStats from './components/MikaStats';
+import Pettersson from './components/Pettersson';
+import PetterssonStats from './components/PetterssonStats';
 import Intro from './components/Intro';
 import NextGame from './components/NextGame';
 import './App.css';
@@ -15,7 +15,7 @@ class App extends Component{
         {/* <Teams /> */ }
         <NextGame />
         <Roster />
-        { /* <MikaStats /> */ }
+        <PetterssonStats />
       </div>
     );
   }

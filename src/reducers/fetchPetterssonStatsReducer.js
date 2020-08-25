@@ -30,20 +30,20 @@ export default function reducer (state = {
   timeOnIcePerGame: ''
 }, action) {
   switch(action.type) {
-    case "FETCH_MIKA_STATS": {
+    case "FETCH_PETTERSSON_STATS": {
       return {
         ...state,
         fetching: true
       }
     }
-    case "FETCH_MIKA_STATS_REJECTED": {
+    case "FETCH_PETTERSSON_STATS_REJECTED": {
       return {
         ...state,
         fetching: false,
         error: action.payload
       }
     }
-    case "FETCH_MIKA_STATS_FULFILLED": {
+    case "FETCH_PETTERSSON_STATS_FULFILLED": {
       return {
         ...state,
         fetching: false,

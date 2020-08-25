@@ -15,7 +15,7 @@ const Intro = () => {
     <Container>
       <Row>
         <Col xs={12} md={{span: 8, offset: 2}}>
-          <p className="text-center">NHL Stats Application - provides statistics using NHL's undocumented REST API</p>
+          <p className="text-center">Canucks Stats Application - provides live statistics using NHL's undocumented REST API</p>
         </Col>
       </Row>
     </Container>

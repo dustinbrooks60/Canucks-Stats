@@ -1,28 +1,28 @@
 export default function reducer (state = {
   data: {},
-  mika: []
+  pettersson: []
 }, action) {
   switch(action.type) {
-    case "FETCH_MIKA": {
+    case "FETCH_PETTERSSON": {
       return {
         ...state,
         fetching: true
       }
     }
-    case "FETCH_MIKA_REJECTED": {
+    case "FETCH_PETTERSSON_REJECTED": {
       return {
         ...state,
         fetching: false,
         error: action.payload
       }
     }
-    case "FETCH_MIKA_FULFILLED": {
+    case "FETCH_PETTERSSON_FULFILLED": {
       return {
         ...state,
         fetching: false,
         fetched: true,
         data: action.payload.data,
-        mika: action.payload.people
+        pettersson: action.payload.people
       }
     }
     default: return state;

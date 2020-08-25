@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled, {css} from 'styled-components';
 import {Col, Row, Container, Table} from 'react-bootstrap';
 import {connect} from 'react-redux';
-import {fetchMikaStats} from '../actions/fetchMikaStatsAction';
+import {fetchPetterssonStats} from '../actions/fetchPetterssonStatsAction';
 
 const Styles = styled(Container)`
   height: 100%;
@@ -17,57 +17,54 @@ const Styles = styled(Container)`
   }
 `;
 
-class MikaStats extends Component {
+class PetterssonStats extends Component {
 
   componentDidMount = () => {
-    this.props.fetchMikaStats();
+    this.props.fetchPetterssonStats();
   }
 
   render() {
-    const assists = this.props.mikaStats.assists;
-    const blocked = this.props.mikaStats.blocked;
-    const evenTimeOnIce = this.props.mikaStats.evenTimeOnIce;
-    const evenTimeOnIcePerGame = this.props.mikaStats.evenTimeOnIcePerGame;
-    const faceOffPct= this.props.mikaStats.faceOffPct;
-    const gameWinningGoals = this.props.mikaStats.gameWinningGoals;
-    const games = this.props.mikaStats.games;
-    const goals = this.props.mikaStats.goals;
-    const hits = this.props.mikaStats.hits;
-    const overTimeGoals = this.props.mikaStats.overTimeGoals;
-    const penaltyMinutes = this.props.mikaStats.penaltyMinutes;
-    const pim = this.props.mikaStats.pim;
-    const plusMinus = this.props.mikaStats.plusMinus;
-    const points = this.props.mikaStats.points;
-    const powerPlayGoals = this.props.mikaStats.powerPlayGoals;
-    const powerPlayPoints = this.props.mikaStats.powerPlayPoints;
-    const powerPlayTimeOnIce = this.props.mikaStats.powerPlayTimeOnIce;
-    const powerPlayTimeOnIcePerGame = this.props.mikaStats.powerPlayTimeOnIcePerGame;
-    const shifts = this.props.mikaStats.shifts;
-    const shortHandedGoals = this.props.mikaStats.shortHandedGoals;
-    const shortHandedPoints = this.props.mikaStats.shortHandedPoints;
-    const shortHandedTimeOnIce = this.props.mikaStats.shortHandedTimeOnIce;
-    const shortHandedTimeOnIcePerGame = this.props.mikaStats.shortHandedTimeOnIcePerGame;
-    const shotPct = this.props.mikaStats.shotPct;
-    const shots = this.props.mikaStats.shots;
-    const timeOnIce = this.props.mikaStats.timeOnIce;
-    const timeOnIcePerGame = this.props.mikaStats.timeOnIcePerGame;
+    const assists = this.props.petterssonStats.assists;
+    const blocked = this.props.petterssonStats.blocked;
+    const evenTimeOnIce = this.props.petterssonStats.evenTimeOnIce;
+    const evenTimeOnIcePerGame = this.props.petterssonStats.evenTimeOnIcePerGame;
+    const faceOffPct= this.props.petterssonStats.faceOffPct;
+    const gameWinningGoals = this.props.petterssonStats.gameWinningGoals;
+    const games = this.props.petterssonStats.games;
+    const goals = this.props.petterssonStats.goals;
+    const hits = this.props.petterssonStats.hits;
+    const overTimeGoals = this.props.petterssonStats.overTimeGoals;
+    const penaltyMinutes = this.props.petterssonStats.penaltyMinutes;
+    const pim = this.props.petterssonStats.pim;
+    const plusMinus = this.props.petterssonStats.plusMinus;
+    const points = this.props.petterssonStats.points;
+    const powerPlayGoals = this.props.petterssonStats.powerPlayGoals;
+    const powerPlayPoints = this.props.petterssonStats.powerPlayPoints;
+    const powerPlayTimeOnIce = this.props.petterssonStats.powerPlayTimeOnIce;
+    const powerPlayTimeOnIcePerGame = this.props.petterssonStats.powerPlayTimeOnIcePerGame;
+    const shifts = this.props.petterssonStats.shifts;
+    const shortHandedGoals = this.props.petterssonStats.shortHandedGoals;
+    const shortHandedPoints = this.props.petterssonStats.shortHandedPoints;
+    const shortHandedTimeOnIce = this.props.petterssonStats.shortHandedTimeOnIce;
+    const shortHandedTimeOnIcePerGame = this.props.petterssonStats.shortHandedTimeOnIcePerGame;
+    const shotPct = this.props.petterssonStats.shotPct;
+    const shots = this.props.petterssonStats.shots;
+    const timeOnIce = this.props.petterssonStats.timeOnIce;
+    const timeOnIcePerGame = this.props.petterssonStats.timeOnIcePerGame;
 
     return(
       <Styles>
         <Container>
           <Row>
             <Col>
-              <h3 className="text-center">Mika Zibanejad's Stats from the 2018-2019 Season</h3>
-              <h5 className="text-center">API Endpoint:
-                <code>'https://statsapi.web.nhl.com/api/v1/people/8476459/stats?stats=statsSingleSeason&season=20182019'</code>
-              </h5>
+              <h3 className="text-center">Elias Pettersson's Stats from the 2019-2020 Season</h3>
             </Col>
           </Row>
           <Col md={{span: 6, offset: 3}}>
           <Table striped bordered hover size="sm" variant="dark">
             <thead>
               <tr>
-                <th>Mika Zibanejad Stats - 2018/2019</th>
+                <th>Elias Pettersson Stats - 2019/2020</th>
               </tr>
             </thead>
           <tbody>
@@ -189,11 +186,11 @@ class MikaStats extends Component {
 }
 
 const mapStateToProps = state => ({
-  mikaStats: state.fetchMikaStatsReducer
+  petterssonStats: state.fetchPetterssonStatsReducer
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchMikaStats: () => dispatch(fetchMikaStats())
+  fetchPetterssonStats: () => dispatch(fetchPetterssonStats())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(MikaStats);
+export default connect(mapStateToProps, mapDispatchToProps)(PetterssonStats);
