@@ -7,7 +7,11 @@ export default function reducer (state = {
     homeScore: '',
     awayTeam: '',
     homeTeam: '',
-    link: '',
+    awayTotalWins: '',
+    awayTotalLosses: '',
+    homeTotalWins: '',
+    homeTotalLosses: '',
+    venue: '',
 
 
 }, action) {
@@ -38,7 +42,11 @@ export default function reducer (state = {
                 homeScore: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.home.score,
                 awayTeam: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.away.team.name,
                 homeTeam: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.home.team.name,
-                link: action.payload.teams[0].nextGameSchedule.dates[0].games[0].link,
+                awayTotalWins: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.away.leagueRecord.wins,
+                awayTotalLosses: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.away.leagueRecord.losses,
+                homeTotalWins: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.home.leagueRecord.wins,
+                homeTotalLosses: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.home.leagueRecord.losses,
+                venue: action.payload.teams[0].nextGameSchedule.dates[0].games[0].venue.name,
             }
         }
         default: return state;

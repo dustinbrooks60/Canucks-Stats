@@ -29,6 +29,11 @@ class NextGame extends Component {
         const homeScore = this.props.nextGame.homeScore;
         const awayTeam = this.props.nextGame.awayTeam;
         const homeTeam = this.props.nextGame.homeTeam;
+        const awayTotalWins = this.props.nextGame.awayTotalWins;
+        const awayTotalLosses = this.props.nextGame.awayTotalLosses;
+        const homeTotalWins = this.props.nextGame.homeTotalWins;
+        const homeTotalLosses = this.props.nextGame.homeTotalLosses;
+        const venue = this.props.nextGame.venue;
 
         return (
             <Styles>
@@ -39,7 +44,7 @@ class NextGame extends Component {
                         </Col>
                     </Row>
                     <Col md={{span: 6, offset: 3}}>
-                        <Table striped bordered hover size="sm" variant="dark">
+                        <Table striped bordered hover size="md" variant="dark">
                             <thead>
                             <tr>
                                 <th>Game Information</th>
@@ -52,7 +57,19 @@ class NextGame extends Component {
                             </tr>
                             <tr>
                                 <td>Score:</td>
-                                <td>{homeTeam}: {homeScore} / {awayTeam}: {awayScore}</td>
+                                <td>{homeTeam}: {homeScore} - {awayTeam}: {awayScore}</td>
+                            </tr>
+                            <tr>
+                                <td>Home Team League Records:</td>
+                                <td>{homeTeam}: {homeTotalWins} / {homeTotalLosses}</td>
+                            </tr>
+                            <tr>
+                                <td>Away Team League Records:</td>
+                                <td>{awayTeam}: {awayTotalWins} / {awayTotalLosses}</td>
+                            </tr>
+                            <tr>
+                                <td>Venue:</td>
+                                <td>{venue}</td>
                             </tr>
 
                             </tbody>
