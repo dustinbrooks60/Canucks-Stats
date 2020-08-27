@@ -5,6 +5,7 @@ import Pettersson from './components/Pettersson';
 import PetterssonStats from './components/PetterssonStats';
 import Intro from './components/Intro';
 import NextGame from './components/NextGame';
+import LiveGame from './components/LiveGame';
 import './App.css';
 
 class App extends Component{
@@ -14,6 +15,7 @@ class App extends Component{
         <Intro />
         {/* <Teams /> */ }
         <NextGame />
+        <LiveGame />
         <Roster />
         <PetterssonStats />
       </div>
