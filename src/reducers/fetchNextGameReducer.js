@@ -12,6 +12,7 @@ export default function reducer (state = {
     homeTotalWins: '',
     homeTotalLosses: '',
     venue: '',
+    link: '',
 
 
 }, action) {
@@ -47,6 +48,7 @@ export default function reducer (state = {
                 homeTotalWins: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.home.leagueRecord.wins,
                 homeTotalLosses: action.payload.teams[0].nextGameSchedule.dates[0].games[0].teams.home.leagueRecord.losses,
                 venue: action.payload.teams[0].nextGameSchedule.dates[0].games[0].venue.name,
+                link: action.payload.teams[0].nextGameSchedule.dates[0].games[0].link,
             }
         }
         default: return state;

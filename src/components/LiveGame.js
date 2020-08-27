@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components';
 import {Col, Row, Container, Table, ListGroup, ListGroupItem} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {fetchLiveGame} from '../actions/fetchLiveGameAction';
+import {fetchNextGame} from '../actions/fetchNextGameAction';
 
 const Styles = styled(Container)`
   height: 100%;
@@ -65,19 +66,19 @@ class LiveGame extends Component {
                                 <td>{homeName}: {homeShots} - {awayName}: {awayShots}</td>
                             </tr>
                             <tr>
-                                <td>Power Play Percentages:</td>
-                                <td>{homeName}: {homePowerPlayPercentage}% - {awayName}: {awayPowerPlayPercentage}%</td>
-                            </tr>
-                            <tr>
                                 <td>Power Play Goals:</td>
                                 <td>{homeName}: {homePowerPlayGoals} - {awayName}: {awayPowerPlayGoals}</td>
                             </tr>
                             <tr>
-                                <td>Power Play Opportunities:</td>
+                                <td>PP Opportunities:</td>
                                 <td>{homeName}: {homePowerPlayOpportunities} - {awayName}: {awayPowerPlayOpportunities}</td>
                             </tr>
                             <tr>
-                                <td>Faceoff Win Percentages:</td>
+                                <td>Power Play %:</td>
+                                <td>{homeName}: {homePowerPlayPercentage}% - {awayName}: {awayPowerPlayPercentage}%</td>
+                            </tr>
+                            <tr>
+                                <td>Faceoff Win %:</td>
                                 <td>{homeName}: {homeFaceOffWinPercentage}% - {awayName}: {awayFaceOffWinPercentage}%</td>
                             </tr>
                             <tr>
