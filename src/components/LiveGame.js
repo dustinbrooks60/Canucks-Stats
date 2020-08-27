@@ -26,6 +26,8 @@ class LiveGame extends Component {
     render() {
         const currentPeriod = this.props.liveGame.currentPeriod;
         const currentPeriodTimeRemaining = this.props.liveGame.currentPeriodTimeRemaining
+
+        const awayName = this.props.liveGame.awayName;
         const awayGoals = this.props.liveGame.awayGoals;
         const awayShots = this.props.liveGame.awayShots;
         const awayPowerPlayPercentage = this.props.liveGame.awayPowerPlayPercentage;
@@ -34,6 +36,7 @@ class LiveGame extends Component {
         const awayFaceOffWinPercentage = this.props.liveGame.awayFaceOffWinPercentage;
         const awayHits = this.props.liveGame.awayHits;
 
+        const homeName = this.props.liveGame.homeName;
         const homeGoals = this.props.liveGame.homeGoals;
         const homeShots = this.props.liveGame.homeShots;
         const homePowerPlayPercentage = this.props.liveGame.homePowerPlayPercentage;
@@ -59,27 +62,27 @@ class LiveGame extends Component {
                             </tr>
                             <tr>
                                 <td>Shots:</td>
-                                <td>{homeShots} - {awayShots}</td>
+                                <td>{homeName}: {homeShots} - {awayName}: {awayShots}</td>
                             </tr>
                             <tr>
                                 <td>Power Play Percentages:</td>
-                                <td>{homePowerPlayPercentage} - {awayPowerPlayPercentage}</td>
+                                <td>{homeName}: {homePowerPlayPercentage}% - {awayName}: {awayPowerPlayPercentage}%</td>
                             </tr>
                             <tr>
                                 <td>Power Play Goals:</td>
-                                <td>{homePowerPlayGoals} - {awayPowerPlayGoals}</td>
+                                <td>{homeName}: {homePowerPlayGoals} - {awayName}: {awayPowerPlayGoals}</td>
                             </tr>
                             <tr>
                                 <td>Power Play Opportunities:</td>
-                                <td>{homePowerPlayOpportunities} - {awayPowerPlayOpportunities}</td>
+                                <td>{homeName}: {homePowerPlayOpportunities} - {awayName}: {awayPowerPlayOpportunities}</td>
                             </tr>
                             <tr>
                                 <td>Faceoff Win Percentages:</td>
-                                <td>{homeFaceOffWinPercentage} - {awayFaceOffWinPercentage}</td>
+                                <td>{homeName}: {homeFaceOffWinPercentage}% - {awayName}: {awayFaceOffWinPercentage}%</td>
                             </tr>
                             <tr>
                                 <td>Hits:</td>
-                                <td>{homeHits} - {awayHits}</td>
+                                <td>{homeName}: {homeHits} - {awayName}: {awayHits}</td>
                             </tr>
 
                             </tbody>

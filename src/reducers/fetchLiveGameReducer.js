@@ -1,6 +1,8 @@
 export default function reducer (state = {
     data: {},
     liveData: [],
+    awayName: '',
+    homeName: '',
     currentPeriod: '',
     currentPeriodTimeRemaining: '',
     awayGoals: '',
@@ -43,6 +45,8 @@ export default function reducer (state = {
                 liveData: action.payload.liveData,
                 currentPeriod: action.payload.liveData.linescore.currentPeriodOrdinal,
                 currentPeriodTimeRemaining: action.payload.liveData.linescore.currentPeriodTimeRemaining,
+
+                homeName: action.payload.gameData.teams.home.teamName,
                 homeShots: action.payload.liveData.linescore.teams.home.shotsOnGoal,
                 homePowerPlayPercentage: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.powerPlayPercentage,
                 homePowerPlayGoals: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.powerPlayGoals,
@@ -50,6 +54,7 @@ export default function reducer (state = {
                 homeFaceOffWinPercentage: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.faceOffWinPercentage,
                 homeHits: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.hits,
 
+                awayName: action.payload.gameData.teams.away.teamName,
                 awayShots: action.payload.liveData.linescore.teams.away.shotsOnGoal,
                 awayPowerPlayPercentage: action.payload.liveData.boxscore.teams.away.teamStats.teamSkaterStats.powerPlayPercentage,
                 awayPowerPlayGoals: action.payload.liveData.boxscore.teams.away.teamStats.teamSkaterStats.powerPlayGoals,
