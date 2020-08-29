@@ -36,6 +36,7 @@ class LiveGame extends Component {
         const awayPowerPlayOpportunities = this.props.liveGame.awayPowerPlayOpportunities;
         const awayFaceOffWinPercentage = this.props.liveGame.awayFaceOffWinPercentage;
         const awayHits = this.props.liveGame.awayHits;
+        const awayBlocks = this.props.liveGame.awayBlocks;
 
         const homeName = this.props.liveGame.homeName;
         const homeGoals = this.props.liveGame.homeGoals;
@@ -45,6 +46,7 @@ class LiveGame extends Component {
         const homePowerPlayOpportunities = this.props.liveGame.homePowerPlayOpportunities;
         const homeFaceOffWinPercentage = this.props.liveGame.homeFaceOffWinPercentage;
         const homeHits = this.props.liveGame.homeHits;
+        const homeBlocks = this.props.liveGame.homeBlocks;
 
         return (
             <Styles>
@@ -84,6 +86,10 @@ class LiveGame extends Component {
                             <tr>
                                 <td>Hits:</td>
                                 <td>{homeName}: {homeHits} - {awayName}: {awayHits}</td>
+                            </tr>
+                            <tr>
+                                <td>Blocked Shots:</td>
+                                <td>{homeName}: {homeBlocks} - {awayName}: {awayBlocks}</td>
                             </tr>
 
                             </tbody>

@@ -12,6 +12,7 @@ export default function reducer (state = {
     awayPowerPlayOpportunities: '',
     awayFaceOffWinPercentage: '',
     awayHits: '',
+    awayBlocks: '',
 
     homeGoals: '',
     homeShots: '',
@@ -20,6 +21,7 @@ export default function reducer (state = {
     homePowerPlayOpportunities: '',
     homeFaceOffWinPercentage: '',
     homeHits: '',
+    homeBlocks: '',
 
 }, action) {
     switch(action.type) {
@@ -53,6 +55,7 @@ export default function reducer (state = {
                 homePowerPlayOpportunities: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.powerPlayOpportunities,
                 homeFaceOffWinPercentage: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.faceOffWinPercentage,
                 homeHits: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.hits,
+                homeBlocks: action.payload.liveData.boxscore.teams.home.teamStats.teamSkaterStats.blocked,
 
                 awayName: action.payload.gameData.teams.away.teamName,
                 awayShots: action.payload.liveData.linescore.teams.away.shotsOnGoal,
@@ -61,6 +64,7 @@ export default function reducer (state = {
                 awayPowerPlayOpportunities: action.payload.liveData.boxscore.teams.away.teamStats.teamSkaterStats.powerPlayOpportunities,
                 awayFaceOffWinPercentage: action.payload.liveData.boxscore.teams.away.teamStats.teamSkaterStats.faceOffWinPercentage,
                 awayHits: action.payload.liveData.boxscore.teams.away.teamStats.teamSkaterStats.hits,
+                awayBlocks: action.payload.liveData.boxscore.teams.away.teamStats.teamSkaterStats.blocked,
             }
         }
         default: return state;
