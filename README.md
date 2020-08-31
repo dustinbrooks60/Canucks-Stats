@@ -74,16 +74,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 * [React](https://reactjs.org)
@@ -126,6 +117,8 @@ const liveGameURL = 'ENTER YOUR API';
 const liveGameURL = 'https://statsapi.web.nhl.com/api/v1/game/2019030234/feed/live';
 ```
 
+Live game API links can be found by going to https://statsapi.web.nhl.com/api/v1/teams/23?expand=team.schedule.next and then clicking the nextGameSchedule -> dates -> 0 -> games -> 0 -> link
+
 <!-- USAGE EXAMPLES -->
 
 ## Usage
@@ -166,7 +159,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Dustin Brooks - [@your_twitter](https://twitter.com/your_username) - dustinbrooks60@gmail.com
+Dustin Brooks - [@AmateurSketch_](https://twitter.com/AmateurSketch_) - dustinbrooks60@gmail.com
 
 Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.com/dustinbrooks60/Canucks-Stats)
 
@@ -183,7 +176,7 @@ Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.c
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/dustinbrooks60/Canucks-Stats.svg?style=flat-square
 [contributors-url]: https://github.com/dustinbrooks60/Canucks-Stats/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
@@ -194,5 +187,5 @@ Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.c
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/dustinbrooks60
 [product-screenshot]: images/screenshot.png
