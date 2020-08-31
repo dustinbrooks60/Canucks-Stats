@@ -55,7 +55,7 @@ class LiveGame extends Component {
                         <Table striped bordered hover size="md" variant="dark">
                             <thead>
                             <tr>
-                                <th>Live Game Information</th>
+                                <th>Live Game Stats</th>
                             </tr>
                             </thead>
                             <tbody>

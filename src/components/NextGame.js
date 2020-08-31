@@ -34,6 +34,7 @@ class NextGame extends Component {
         const homeTotalWins = this.props.nextGame.homeTotalWins;
         const homeTotalLosses = this.props.nextGame.homeTotalLosses;
         const venue = this.props.nextGame.venue;
+        const detailedState = this.props.nextGame.detailedState;
 
         return (
             <Styles>
@@ -56,16 +57,24 @@ class NextGame extends Component {
                                 <td>{date}</td>
                             </tr>
                             <tr>
-                                <td>Score:</td>
-                                <td>{homeTeam}: {homeScore} - {awayTeam}: {awayScore}</td>
+                                <td>Status:</td>
+                                <td>{detailedState}</td>
                             </tr>
                             <tr>
-                                <td>Home Team League Records:</td>
-                                <td>{homeTeam}: {homeTotalWins} / {homeTotalLosses}</td>
+                                <td>{homeTeam} Score:</td>
+                                <td>{homeScore}</td>
                             </tr>
                             <tr>
-                                <td>Away Team League Records:</td>
-                                <td>{awayTeam}: {awayTotalWins} / {awayTotalLosses}</td>
+                                <td>{awayTeam} Score:</td>
+                                <td>{awayScore}</td>
+                            </tr>
+                            <tr>
+                                <td>{homeTeam} League Records:</td>
+                                <td>{homeTotalWins} / {homeTotalLosses}</td>
+                            </tr>
+                            <tr>
+                                <td>{awayTeam} League Records:</td>
+                                <td>{awayTotalWins} / {awayTotalLosses}</td>
                             </tr>
                             <tr>
                                 <td>Venue:</td>
