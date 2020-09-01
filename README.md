@@ -19,7 +19,7 @@
 -->
 [![Last Commit][last-commit-shield]][last-commit-url]
 [![Commits][commit-shield]][commit-url]
-[![Stargazers][stars-shield]][stars-url]
+[![Repo Size][repo-size-shield]][]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -168,13 +168,13 @@ Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.c
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[last-commit-shield]: https://img.shields.io/github/last-commit/dustinbrooks60/Canucks-Stats
+[last-commit-shield]: https://img.shields.io/github/last-commit/dustinbrooks60/Canucks-Stats.svg?style=flat-square
 [last-commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/graphs/contributors
 [commit-shield]: https://img.shields.io/github/commit-activity/m/dustinbrooks60/Canucks-Stats
 [commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/commits/
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[repo-size-shield]: https://img.shields.io/github/repo-size/dustinbrooks60/Canucks-Stats
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/dustinbrooks60/Canucks-Stats.svg?style=flat-square
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
