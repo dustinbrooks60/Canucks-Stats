@@ -18,7 +18,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Last Commit][last-commit-shield]][last-commit-url]
-[![Commits][commit-shield]][commits-url]
+[![Commits][commit-shield]][commit-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
