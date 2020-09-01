@@ -19,7 +19,7 @@
 -->
 [![Last Commit][last-commit-shield]][last-commit-url]
 [![Commits][commit-shield]][commit-url]
-[![Repo Size][repo-size-shield]][]
+[![Repo Size][repo-size-shield]][repo-size-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -173,11 +173,9 @@ Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.c
 [commit-shield]: https://img.shields.io/github/commit-activity/m/dustinbrooks60/Canucks-Stats
 [commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/commits/
 [repo-size-shield]: https://img.shields.io/github/repo-size/dustinbrooks60/Canucks-Stats
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[repo-size-url]: https://github.com/dustinbrooks60/Canucks-Stats
 [issues-shield]: https://img.shields.io/github/issues/dustinbrooks60/Canucks-Stats.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[issues-url]: https://github.com/dustinbrooks60/Canucks-Stats/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/dustinbrooks60
 [live-stats-example]: images/liveStatsExample.png
