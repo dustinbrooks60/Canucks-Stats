@@ -36,7 +36,7 @@
   <h3 align="center">Canucks Stats</h3>
 
   <p align="center">
-    Retrieves live stats on Canucks games from the official NHL undocumented API
+    Retrieves live stats on Canucks games from the official NHL API.
     <br />
     <a href="https://github.com/dustinbrooks60/Canucks-Stats"><strong>Explore the docs »</strong></a>
     <br />
@@ -55,8 +55,8 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
+* [Built With](#built-with)
+
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -124,6 +124,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
+
+Create some nice looking charts to show off the data. 
 
 See the [open issues](https://github.com/dustinbrooks60/Canucks-Stats/issues) for a list of proposed features (and known issues).
 
