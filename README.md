@@ -17,17 +17,17 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
+[![Last Commit][last-commit-shield]][last-commit-url]
+[![Commits][commit-shield]][commits-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
 <!-- PROJECT LOGO -->
 <br />
+
 <p align="center">
   <a href="https://github.com/dustinbrooks60/Canucks-Stats">
     <img src="images/logo.png" alt="Logo" width="199" height="212">
@@ -69,13 +69,6 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-
-
 ### Built With
 * [React](https://reactjs.org)
 * [Redux](https://redux.js.org)
@@ -105,7 +98,11 @@ git clone https://github.com/dustinbrooks60/Canucks-Stats.git
 ```sh
 npm install
 ```
-3. If you want live stats of a specific game, enter your API link in `fetchLiveGameAction.js`
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+If you want live stats of a specific game, enter your API link in `fetchLiveGameAction.js`
 
 ```JS
 const liveGameURL = 'ENTER YOUR API';
@@ -119,11 +116,7 @@ const liveGameURL = 'https://statsapi.web.nhl.com/api/v1/game/2019030234/feed/li
 
 Live game API links can be found by going to https://statsapi.web.nhl.com/api/v1/teams/23?expand=team.schedule.next and then clicking the nextGameSchedule -> dates -> 0 -> games -> 0 -> link
 
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+[![Live Stats Example][live-stats-example]](https://example.com)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -150,16 +143,15 @@ Contributions are what make the open source community such an amazing place to b
 
 
 <!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Dustin Brooks - [@AmateurSketch_](https://twitter.com/AmateurSketch_) - dustinbrooks60@gmail.com
+Dustin Brooks - dustinbrooks60@gmail.com - [@AmateurSketch_](https://twitter.com/AmateurSketch_)
+
+
 
 Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.com/dustinbrooks60/Canucks-Stats)
 
@@ -176,10 +168,10 @@ Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.c
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/dustinbrooks60/Canucks-Stats.svg?style=flat-square
-[contributors-url]: https://github.com/dustinbrooks60/Canucks-Stats/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[last-commit-shield]: https://img.shields.io/github/last-commit/dustinbrooks60/Canucks-Stats
+[last-commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/graphs/contributors
+[commit-shield]: https://img.shields.io/github/commit-activity/m/dustinbrooks60/Canucks-Stats
+[commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/commits/
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
@@ -188,4 +180,5 @@ Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.c
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/dustinbrooks60
-[product-screenshot]: images/screenshot.png
+[live-stats-example]: images/liveStatsExample.png
+
