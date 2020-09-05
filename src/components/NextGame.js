@@ -42,6 +42,8 @@ class NextGame extends Component {
                     <Row>
                         <Col>
                             <h3 className="text-center">{homeTeam} vs. {awayTeam}</h3>
+                            <h3 className="text-center"> NOTE: Will automatically updated when Canucks play next.</h3>
+                            <h3 className="text-center"> For now, will show blank stats until the next season. </h3>
                         </Col>
                     </Row>
                     <Col md={{span: 6, offset: 3}}>

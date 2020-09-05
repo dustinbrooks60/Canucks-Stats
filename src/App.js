@@ -16,8 +16,8 @@ class App extends Component{
         {/* <Teams /> */ }
         <NextGame />
         <LiveGame />
-        <Roster />
         <PetterssonStats />
+        <Roster />
       </div>
     );
   }
