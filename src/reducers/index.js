@@ -4,7 +4,8 @@ import fetchRosterReducer from './fetchRosterReducer';
 import fetchPetterssonReducer from './fetchPetterssonReducer';
 import fetchPetterssonStatsReducer from './fetchPetterssonStatsReducer';
 import fetchNextGameReducer from './fetchNextGameReducer';
-import fetchLiveGameReducer from './fetchLiveGameReducer'
+import fetchLiveGameReducer from './fetchLiveGameReducer';
+import fetchCanucksStatsReducer from './fetchCanucksStatsReducer';
 
 export default combineReducers({
   fetchTeamsReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
   fetchPetterssonReducer,
   fetchPetterssonStatsReducer,
   fetchNextGameReducer,
-    fetchLiveGameReducer
+    fetchLiveGameReducer,
+    fetchCanucksStatsReducer
 })
