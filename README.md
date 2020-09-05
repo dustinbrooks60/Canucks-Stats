@@ -173,7 +173,7 @@ Project Link: [https://github.com/dustinbrooks60/Canucks-Stats](https://github.c
 [last-commit-shield]: https://img.shields.io/github/last-commit/dustinbrooks60/Canucks-Stats.svg?style=flat-square
 [last-commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/graphs/contributors
 [commit-shield]: https://img.shields.io/github/commit-activity/m/dustinbrooks60/Canucks-Stats
-[commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/commits/
+[commit-url]: https://github.com/dustinbrooks60/Canucks-Stats/commits
 [repo-size-shield]: https://img.shields.io/github/repo-size/dustinbrooks60/Canucks-Stats
 [repo-size-url]: https://github.com/dustinbrooks60/Canucks-Stats
 [issues-shield]: https://img.shields.io/github/issues/dustinbrooks60/Canucks-Stats.svg?style=flat-square
