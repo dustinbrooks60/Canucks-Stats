@@ -101,19 +101,19 @@ npm install
 
 ## Usage
 
-If you want live stats of a specific game, enter your API link in `fetchLiveGameAction.js`
+If you want live stats of a specific game, enter your game ID link in `fetchLiveGameAction.js`
 
 ```JS
-const liveGameURL = 'ENTER YOUR API';
+const liveGameURL = 'ENTER YOUR GAME ID LINK';
 ```
 
-​	ex. 
+​	example: 
 
 ```js
 const liveGameURL = 'https://statsapi.web.nhl.com/api/v1/game/2019030234/feed/live';
 ```
 
-Live game API links can be found by going to https://statsapi.web.nhl.com/api/v1/teams/23?expand=team.schedule.next and then clicking the nextGameSchedule -> dates -> 0 -> games -> 0 -> link
+Live game ID links can be found by going to https://statsapi.web.nhl.com/api/v1/teams/23?expand=team.schedule.next and then clicking nextGameSchedule -> dates -> 0 -> games -> 0 -> link
 
 [![Live Stats Example][live-stats-example]](https://example.com)
 
