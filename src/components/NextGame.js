@@ -39,7 +39,7 @@ class NextGame extends Component {
         return (
             <Styles>
                 <Container>
-                    <Row>
+                    <Row style={{border: "3px solid rgb(0, 0, 0)"}}>
                         <Col>
                             <h3 className="text-center">{homeTeam} vs. {awayTeam}</h3>
                             <h3 className="text-center"> NOTE: Will automatically update when Canucks play next.</h3>

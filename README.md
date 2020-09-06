@@ -41,7 +41,7 @@
     <a href="https://github.com/dustinbrooks60/Canucks-Stats"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/dustinbrooks60/Canucks-Stats">View Demo</a>
+    <a href="https://dustinbrooks60.github.io/Canucks-Stats">View Demo</a>
     ·
     <a href="https://github.com/dustinbrooks60/Canucks-Stats/issues">Report Bug</a>
     ·
@@ -63,7 +63,6 @@
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
-* [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -125,7 +124,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-Create some nice looking charts to show off the data. 
+-Create some nice looking charts to show off the data. 
+
+-Add Corsi stats.
 
 See the [open issues](https://github.com/dustinbrooks60/Canucks-Stats/issues) for a list of proposed features (and known issues).
 

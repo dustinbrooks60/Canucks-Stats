@@ -13,7 +13,7 @@ class App extends Component{
   render(){
     return (
       <div>
-        <Intro />
+          {/*<Intro / >*/}
         {/* <Teams /> */ }
         <NextGame />
         <LiveGame />
