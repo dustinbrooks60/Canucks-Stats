@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Canucks-Stats/static/css/main.692d75bb.chunk.css",
+    "main.js": "/Canucks-Stats/static/js/main.011edd3a.chunk.js",
+    "main.js.map": "/Canucks-Stats/static/js/main.011edd3a.chunk.js.map",
+    "runtime-main.js": "/Canucks-Stats/static/js/runtime-main.d57838ad.js",
+    "runtime-main.js.map": "/Canucks-Stats/static/js/runtime-main.d57838ad.js.map",
+    "static/css/2.f93178fb.chunk.css": "/Canucks-Stats/static/css/2.f93178fb.chunk.css",
+    "static/js/2.95f50b89.chunk.js": "/Canucks-Stats/static/js/2.95f50b89.chunk.js",
+    "static/js/2.95f50b89.chunk.js.map": "/Canucks-Stats/static/js/2.95f50b89.chunk.js.map",
+    "index.html": "/Canucks-Stats/index.html",
+    "precache-manifest.a785386f49d5b989f59b6a3fcd9143f1.js": "/Canucks-Stats/precache-manifest.a785386f49d5b989f59b6a3fcd9143f1.js",
+    "service-worker.js": "/Canucks-Stats/service-worker.js",
+    "static/css/2.f93178fb.chunk.css.map": "/Canucks-Stats/static/css/2.f93178fb.chunk.css.map",
+    "static/css/main.692d75bb.chunk.css.map": "/Canucks-Stats/static/css/main.692d75bb.chunk.css.map",
+    "static/js/2.95f50b89.chunk.js.LICENSE.txt": "/Canucks-Stats/static/js/2.95f50b89.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d57838ad.js",
+    "static/css/2.f93178fb.chunk.css",
+    "static/js/2.95f50b89.chunk.js",
+    "static/css/main.692d75bb.chunk.css",
+    "static/js/main.011edd3a.chunk.js"
+  ]
+}
