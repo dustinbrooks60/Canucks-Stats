@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import styled, {css} from 'styled-components';
-import {Col, Row, Container, Table, ListGroup, ListGroupItem} from 'react-bootstrap';
+import styled from 'styled-components';
+import {Col, Row, Container, Table} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {fetchNextGame} from '../actions/fetchNextGameAction';
 
@@ -9,6 +9,7 @@ const Styles = styled(Container)`
   width: 100%;
 
   h3 {
+    text-align: center;
     margin-top: 1em;
   }
 
@@ -21,7 +22,7 @@ class NextGame extends Component {
 
     componentDidMount = () => {
         this.props.fetchNextGame();
-    }
+    };
 
     render() {
         const date = this.props.nextGame.date;
@@ -41,7 +42,7 @@ class NextGame extends Component {
                 <Container>
                     <Row>
                         <Col>
-                            <h3 className="text-center">{homeTeam} vs. {awayTeam}</h3>
+                            <h3>{homeTeam} vs. {awayTeam}</h3>
                         </Col>
                     </Row>
                     <Col md={{span: 6, offset: 3}}>

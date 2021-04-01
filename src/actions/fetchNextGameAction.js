@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export function fetchNextGame() {
     return function(dispatch) {
-        dispatch({type: fetchNextGame})
+        dispatch({type: fetchNextGame});
 
         axios.get('https://statsapi.web.nhl.com/api/v1/teams/23?expand=team.schedule.next')
             .then((response) => {

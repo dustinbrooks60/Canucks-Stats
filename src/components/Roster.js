@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {Col, Row, Container, Table} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {fetchRoster} from '../actions/fetchRosterAction';
@@ -34,7 +34,7 @@ class Roster extends Component {
 
   componentDidMount = () => {
     this.props.fetchRoster();
-  }
+  };
 
   render() {
     const rosterData = this.props.roster.roster;

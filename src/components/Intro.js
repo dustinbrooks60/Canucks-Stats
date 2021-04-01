@@ -1,26 +1,29 @@
-import React, {Component} from 'react';
-import styled, {css} from 'styled-components';
-import {Col, Row, Container, Table} from 'react-bootstrap';
+import React from 'react';
+import styled from 'styled-components';
+import {Col, Row, Container} from 'react-bootstrap';
 
-const STYLES = styled('div')`
+const Styles = styled('div')`
   p {
+    font-weight: bold;
     font-size: 1.5em;
-    margin: 2em;
+    margin: 1em;
+    text-align: center;
   }
 `;
 
 const Intro = () => {
   return(
-    <STYLES>
-    <Container>
-      <Row>
-        <Col xs={12} md={{span: 8, offset: 2}}>
-          <p className="text-center">Canucks Stats Application - provides live statistics using NHL's undocumented REST API</p>
-        </Col>
-      </Row>
-    </Container>
-    </STYLES>
+    <Styles>
+      <Container>
+        <Row>
+          <Col xs={12} md={{span: 8, offset: 2}}>
+              <p>Canucks Stats Application</p>
+              <p>Provides live statistics using the NHL's undocumented REST API</p>
+          </Col>
+        </Row>
+      </Container>
+    </Styles>
   );
-}
+};
 
 export default Intro;

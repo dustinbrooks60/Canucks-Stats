@@ -3,7 +3,7 @@ import axios from 'axios';
 export function fetchLiveGame() {
     const liveGameURL = 'https://statsapi.web.nhl.com/api/v1/game/2020020371/feed/live';
     return function(dispatch) {
-        dispatch({type: fetchLiveGame})
+        dispatch({type: fetchLiveGame});
 
 
         axios.get(liveGameURL)

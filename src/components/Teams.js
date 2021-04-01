@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import styled, {css} from 'styled-components';
-import {Col, Row, Container, Table, ListGroup, ListGroupItem} from 'react-bootstrap';
+import styled from 'styled-components';
+import {Col, Row, Container, Table} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {fetchTeams} from '../actions/fetchTeamsAction';
 
@@ -9,6 +9,7 @@ const Styles = styled(Container)`
   width: 100%;
 
   h3 {
+    text-align: center;
     margin-top: 1em;
   }
 
@@ -40,8 +41,8 @@ class Teams extends Component {
         <Container>
           <Row>
             <Col>
-              <h3 className="text-center">Retrieving Teams from the NHL API:</h3>
-              <h5 className="text-center">API endpoint : <code>'https://statsapi.web.nhl.com/api/v1/teams'</code></h5>
+              <h3>Retrieving Teams from the NHL API:</h3>
+              <h3>API endpoint : <code>'https://statsapi.web.nhl.com/api/v1/teams'</code></h3>
             </Col>
           </Row>
           <Row>

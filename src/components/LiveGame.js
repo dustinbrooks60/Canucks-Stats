@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import styled, {css} from 'styled-components';
-import {Col, Row, Container, Table, ListGroup, ListGroupItem} from 'react-bootstrap';
+import styled from 'styled-components';
+import {Col, Container, Table} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {fetchLiveGame} from '../actions/fetchLiveGameAction';
-import {fetchNextGame} from '../actions/fetchNextGameAction';
 
 const Styles = styled(Container)`
   height: 100%;
@@ -22,14 +21,13 @@ class LiveGame extends Component {
 
     componentDidMount = () => {
         this.props.fetchLiveGame();
-    }
+    };
 
     render() {
         const currentPeriod = this.props.liveGame.currentPeriod;
         const currentPeriodTimeRemaining = this.props.liveGame.currentPeriodTimeRemaining
 
         const awayName = this.props.liveGame.awayName;
-        const awayGoals = this.props.liveGame.awayGoals;
         const awayShots = this.props.liveGame.awayShots;
         const awayPowerPlayPercentage = this.props.liveGame.awayPowerPlayPercentage;
         const awayPowerPlayGoals = this.props.liveGame.awayPowerPlayGoals;
@@ -39,7 +37,6 @@ class LiveGame extends Component {
         const awayBlocks = this.props.liveGame.awayBlocks;
 
         const homeName = this.props.liveGame.homeName;
-        const homeGoals = this.props.liveGame.homeGoals;
         const homeShots = this.props.liveGame.homeShots;
         const homePowerPlayPercentage = this.props.liveGame.homePowerPlayPercentage;
         const homePowerPlayGoals = this.props.liveGame.homePowerPlayGoals;

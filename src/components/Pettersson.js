@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {Col, Row, Container, Table} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {fetchPettersson} from '../actions/fetchPetterssonAction';

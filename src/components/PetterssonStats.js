@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {Col, Row, Container, Table} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {fetchPetterssonStats} from '../actions/fetchPetterssonStatsAction';
@@ -9,6 +9,7 @@ const Styles = styled(Container)`
   width: 100%;
 
   h3 {
+    text-align: center;
     margin-top: 1em;
   }
 
@@ -21,7 +22,7 @@ class PetterssonStats extends Component {
 
   componentDidMount = () => {
     this.props.fetchPetterssonStats();
-  }
+  };
 
   render() {
     const assists = this.props.petterssonStats.assists;
@@ -57,7 +58,7 @@ class PetterssonStats extends Component {
         <Container>
           <Row>
             <Col>
-              <h3 className="text-center">Elias Pettersson's Stats from the 2019-2020 Season</h3>
+              <h3>Elias Pettersson's Stats from the 2019-2020 Season</h3>
             </Col>
           </Row>
           <Col md={{span: 6, offset: 3}}>
