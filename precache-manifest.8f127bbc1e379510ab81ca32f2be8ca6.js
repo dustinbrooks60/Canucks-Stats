@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d43da6c1120d05455103efa3b455b573",
+    "revision": "14604e7475c9472a32416e60bafb1c81",
     "url": "/Canucks-Stats/index.html"
   },
   {
-    "revision": "27311fa3b51eace43ffd",
+    "revision": "4668b54d842df2f30a7a",
     "url": "/Canucks-Stats/static/css/2.f93178fb.chunk.css"
   },
   {
-    "revision": "64e8a2d818035f81cf3a",
+    "revision": "3548084a44e742e34788",
     "url": "/Canucks-Stats/static/css/main.4c06968d.chunk.css"
   },
   {
-    "revision": "27311fa3b51eace43ffd",
-    "url": "/Canucks-Stats/static/js/2.95f50b89.chunk.js"
+    "revision": "4668b54d842df2f30a7a",
+    "url": "/Canucks-Stats/static/js/2.64b239d7.chunk.js"
   },
   {
     "revision": "86a36a32ea77366f8e1062ebfa4eedd0",
-    "url": "/Canucks-Stats/static/js/2.95f50b89.chunk.js.LICENSE.txt"
+    "url": "/Canucks-Stats/static/js/2.64b239d7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64e8a2d818035f81cf3a",
-    "url": "/Canucks-Stats/static/js/main.7fd0bef1.chunk.js"
+    "revision": "3548084a44e742e34788",
+    "url": "/Canucks-Stats/static/js/main.d423e09b.chunk.js"
   },
   {
     "revision": "07d306b325a3e5ccea39",

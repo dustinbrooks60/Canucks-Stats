@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Canucks-Stats/precache-manifest.3201ed3372b0f998543e1e7163b32b4a.js"
+  "/Canucks-Stats/precache-manifest.8f127bbc1e379510ab81ca32f2be8ca6.js"
 );
 
 self.addEventListener('message', (event) => {
